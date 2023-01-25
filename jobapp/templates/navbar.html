@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link rel="icon" href="{% static 'assets/images/favicon.ico' %}">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap' %}"
+          rel="stylesheet">
+
+    <title>PHPJabbers.com | Free Job Agency Website Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<header class="">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href=index.html"><h2>Job Agency <em>Website</em></h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/jobapp/log">Contact Us</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About us</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true" aria-expanded="false">More</a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="team.html">Team</a>
+                            <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                            <a class="dropdown-item" href="terms.html">Terms</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Log OUT</a></li>
+                    <li>
+                        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars fa-2x"></i>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                             aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <img src="{% static '21-mktc-02332-our-company-pbu-exterior-900x500.jpg.image.600.jpg' %}" style="width:100%;">
+                                <h5 id="offcanvasRightLabel"></h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body ">
+                                <h1>xyz</h1>
+                                <ul>
+                                    <li><i class="fa-solid fa-house" ></i>&nbsp;&nbsp;<a href="">Home</a></li><br>
+                                    <li><i class="fa-solid fa-address-card"></i>&nbsp;&nbsp;<a href="">About Company</a></li><br>
+                                    <li><i class="fa-solid fa-user-pen"></i>&nbsp;&nbsp;<a href="">Edit Profile</a></li><br>
+                                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;<a href="">Logout</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+</body>
+</html>

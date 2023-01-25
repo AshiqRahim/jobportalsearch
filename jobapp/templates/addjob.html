@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0d4230aee3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+
+    <div align="center">
+        <h1>UPLOAD VACANCIES</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="row  mt-5">
+
+            <div class="col-2">
+                <label class="form-label mt-1">Company Name</label>
+            </div>
+
+            <div class="col-6">
+                <div class="input-group  ">
+                    <span class="input-group-text"><i class="fa-solid fa-user fa-2x"></i></span>
+                    <input type="text" class="form-control" placeholder="" name="cmp_name" value="{{cm}}" readonly>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row mt-4">
+            <div class="col-2">
+                <label class="form-label mt-1">Email</label>
+            </div>
+
+            <div class="col-6">
+                <div class="input-group  ">
+                    <span class="input-group-text"><i class="fa-solid fa-user fa-2x"></i></span>
+                    <input type="email" class="form-control" placeholder="" name="cmp_email" value="{{em}}" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2">
+                <label class="form-label mt-1">Job Title</label>
+            </div>
+
+            <div class="col-6">
+                <div class="input-group  ">
+                    <span class="input-group-text"><i class="fa-solid fa-user fa-2x"></i></span>
+                    <input type="text" class="form-control" placeholder="" name="title">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2">
+                <label class="form-label mt-1">Job Type</label>
+            </div>
+
+            <div class="col-6">
+                <div class="input-group  ">
+                    <span class="input-group-text"><i class="fa-solid fa-bars fa-2x"></i></span>
+                    <select class="form-select" name="jobtype">
+                        <option> select</option>
+                        <option value="Part Time">Part Time</option>
+                        <option value="Full Time">Full Time</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2">
+                <label class="form-label mt-1">Work Type</label>
+            </div>
+
+            <div class="col-6">
+                <div class="input-group  ">
+                    <span class="input-group-text"><i class="fa-solid fa-bars fa-2x"></i></span>
+                    <select class="form-select" name="wrktype">
+                        <option> select</option>
+                        <option value="Hybrid">Hybrid</option>
+                        <option value="Remote">Remote</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2">
+                <label class="form-label mt-1">Experience Required</label>
+            </div>
+
+            <div class="col-6">
+                <div class="input-group  ">
+                    <span class="input-group-text"><i class="fa-solid fa-bars fa-2x"></i></span>
+                    <select class="form-select" name="exp_required">
+                        <option> select</option>
+                        <option value="0-1">0-1</option>
+                        <option value="1-2">1-2</option>
+                        <option value="2-3">2-3</option>
+                        <option value="3-4">3-4</option>
+                        <option value="4-5">4-5</option>
+                        <option value="5-6">5-6</option>
+                        <option value="6-7">6-7</option>
+                        <option value="7-8">7-8</option>
+                        <option value="8-9">8-9</option>
+                        <option value="9-10">9-10</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2">
+                <label class="form-label mt-1">Qualification Required</label>
+            </div>
+
+            <div class="col-6">
+                <div class="input-group  ">
+                    <span class="input-group-text"><i class="fa-solid fa-user fa-2x"></i></span>
+                    <input type="text" class="form-control" placeholder="" name="qualification">
+                </div>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <button type="submit" class="btn btn-success" style="margin-left: 500px;">submit</button>
+    </div>
+</form>
+
+</body>
+</html>
